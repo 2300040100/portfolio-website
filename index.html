@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a9e22e7053.js" crossorigin="anonymous"></script>   
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+           <p></p> 
+           <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+           </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hey! I'm <br><span>Karishma</span><br></h1>
+            <p>Electronics and Communication<br>Engineer</p>
+        </div>
+    </div>
+</div> 
+<!------------------about---------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/userprofile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a curious and dedicated individual who enjoys learning and exploring new ideas.
+                I have a strong passion for understanding how things work and applying my knowledge
+                in creative and practical ways. Whether it's solving problems, experimenting with
+                projects, or diving into challenging topics, I am always eager to expand my skills
+                and grow in my journey.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Full-Stack Development</span><br>Currently learning front-end and back-end integration using(HTML,CSS,Java)</li>
+                        <li><span>Electronics Design</span><br>Developing and analyzing circuits and hardware systems</li>
+                        <li><span>Problem-Solving</span><br>Designing creative and practical solutions in electronics and software</li>      
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>2024</span><br>AI Salesforce Cerification</li>
+                        <li><span>2024</span><br>MATLAB Certification</li>
+                        <li><span>2024</span><br>Embedded System Certification</li>     
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Current</span><br>KL University - B.Tech(ECE)<br>Grade:9.59 CGPA<br></li>
+                        <li><span>2023</span><br>Star Junior College - Intermediate(MPC)<br>Grade:9.75 CGPA</li>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-plug"></i>
+                <h2>Electronics Projects</h2>
+                <p>Specializing in circuit design, PCB layout, and practical electronics solutions for academic and real-world applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Creating responsive and visually appealing websites using HTML, CSS, JavaScript, and modern design tools.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>IoT Solutions</h2>
+                <p>Developing innovative Internet of Things (IoT) solutions for smart automation, connectivity, and advanced systems integration.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------portfolio------------------------>
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Certificates</h1>
+    <br><br>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.jpg">
+        </div>
+
+        <div class="work">
+            <img src="images/work-2.jpeg">
+        </div>
+
+        <div class="work">
+            <img src="images/work-3.jpeg">
+        </div>
+    </div>
+</div>
+</div>
+<!------------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>karishma123150@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8121888915</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 by Karishma Mohammed <i class="fa-solid fa-heart"></i>, All Rights Reserved</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-4Hb9hn1C1ltSdGB5RQUxSIYAyRFJAJkkH-EErnkZHzLVpH44SPpIWt5RfeC6KUSQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
