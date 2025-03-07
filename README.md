@@ -1,8 +1,8 @@
-# Portfolio Website
+# Portfolio Website 
 
 Welcome to my portfolio website! 🌟
 
-## About Me
+##  About Me
 I am a passionate developer interested in web development, AI/ML, and electronics projects.
 
 ## 📌 Features
@@ -12,9 +12,10 @@ I am a passionate developer interested in web development, AI/ML, and electronic
 - Smooth Animations 
 
 ## 🔗 Live Demo
-Check out my website: [https://2300040100.github.io/portfolio-website/](Click Here)
+Check out my website: [https://2300040100.github.io/portfolio-website/](https://2300040100.github.io/portfolio-website/)
 
-## Technologies Used
+
+##  Technologies Used
 - HTML
 - CSS
 - JavaScript
@@ -23,3 +24,4 @@ Check out my website: [https://2300040100.github.io/portfolio-website/](Click He
 1. Clone this repository:
    ```sh
    git clone https://github.com/2300040100/portfolio-website.git
+
